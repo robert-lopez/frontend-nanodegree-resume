@@ -12,6 +12,14 @@ var bio = {
 "schoolname": "Jesus Marcano"
 };
 
+var education = {
+"schoolname": "Jesus Marcano",
+"city":"santiago",
+"major":"engineering",
+"minor":"informatic",
+"years":4
+};
+
 $("#header").prepend(HTMLskills.replace("%data%", bio.skills));
 
 $("#header").prepend(HTMLemail.replace("%data%", bio.contact.email));
@@ -25,4 +33,9 @@ $("#header").prepend(HTMLWelcomeMsg.replace("%data%", bio.welcome));
 
 $("#header").append(HTMLworkTitle.replace("%data%", bio["worktitle"]));
 $("#header").append(HTMLschoolName.replace("%data%", bio["schoolname"]));
+
+//$("#header").append(HTMLschoolName.replace("%data%", education["schoolname"]));
+$("#header").append(HTMLschoolLocation.replace("%data%", education.city));
+$("#header").append(HTMLschoolMajor.replace("%data%", education.major));
+
 
