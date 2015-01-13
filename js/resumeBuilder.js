@@ -9,24 +9,41 @@ var bio = {
 "picture": "images/2.png",
 "welcomeMessage":"Welcome to my Resume!",
 "skills":["Programming", "Solving", "Perseverance", "Spanish"],
-"worktitle":"SCRUM Team Member",
-"schoolname": "Jesus Marcano"
+
 };
 
-var education = {"schools":[{
-"name": "Jesus Marcano",
-"location":"santiago",
-"majors":["engineering"],
-"degree":"informatic",
-"dates":[2010, 2011, 2012],
-"url":"http://es.wikipedia.org/wiki/Eugenio_de_Jes%C3%BAs_Marcano_Fondeur"
-}
-],
+var education = {
+"schools":[{
+		"name": "Jesus Marcano",
+		"location":"santiago",
+		"majors":["engineering"],
+		"degree":"informatic",
+		"dates":[2010, 2011, 2012],
+		"url":"http://es.wikipedia.org/wiki/Eugenio_de_Jes%C3%BAs_Marcano_Fondeur"
+}],
 "onlineCourses":[{
-"title":"javascript basic",
-"school":"udacity",
-"dates":[2015],
-"url":"https://www.udacity.com"
+		"title":"javascript basic",
+		"school":"udacity",
+		"dates":[2015],
+		"url":"https://www.udacity.com"
+}]};
+
+var work = {"jobs":[{
+				"employer":"chris",
+				"title":"SCRUM TEAM MEMBER",
+				"location":"avenida erick eckman",
+				"dates":["jan","feb","mar"],
+				"description":"giving quality to softwares",
+				
+}
+]
+};
+
+var projects = {"projects":[{
+					"title":"Operations",
+					"dates":["jul","jun","aug"],
+					"description":"fixing and creating features",
+					"images":["projects/daxko.png"]
 }
 ]
 }
