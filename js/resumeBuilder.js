@@ -3,24 +3,35 @@ var bio = {
 "role":"QA Engineer",
 "contact":{	"tell":"(809) 570-9578",
 			"cell":"(829) 429-1859",
-			"email":"robert@engineer.com"
+			"email":"robert@engineer.com",
+			"github":"robert-lopez"
 			},
 "picture": "images/2.png",
-"welcome":"Welcome to my Resume!",
-"skills":"Programming, Solving, Perseverance, Spanish",
+"welcomeMessage":"Welcome to my Resume!",
+"skills":["Programming", "Solving", "Perseverance", "Spanish"],
 "worktitle":"SCRUM Team Member",
 "schoolname": "Jesus Marcano"
 };
 
-var education = {
-"schoolname": "Jesus Marcano",
-"city":"santiago",
-"major":"engineering",
-"minor":"informatic",
-"years":4
-};
+var education = {"schools":[{
+"name": "Jesus Marcano",
+"location":"santiago",
+"majors":["engineering"],
+"degree":"informatic",
+"dates":[2010, 2011, 2012],
+"url":"http://es.wikipedia.org/wiki/Eugenio_de_Jes%C3%BAs_Marcano_Fondeur"
+}
+],
+"onlineCourses":[{
+"title":"javascript basic",
+"school":"udacity",
+"dates":[2015],
+"url":"https://www.udacity.com"
+}
+]
+}
 
-$("#header").prepend(HTMLskills.replace("%data%", bio.skills));
+/*$("#header").prepend(HTMLskills.replace("%data%", bio.skills));
 
 $("#header").prepend(HTMLemail.replace("%data%", bio.contact.email));
 $("#header").prepend(HTMLmobile.replace("%data%", bio.contact.cell));
@@ -36,6 +47,6 @@ $("#header").append(HTMLschoolName.replace("%data%", bio["schoolname"]));
 
 //$("#header").append(HTMLschoolName.replace("%data%", education["schoolname"]));
 $("#header").append(HTMLschoolLocation.replace("%data%", education.city));
-$("#header").append(HTMLschoolMajor.replace("%data%", education.major));
+$("#header").append(HTMLschoolMajor.replace("%data%", education.major));*/
 
 
