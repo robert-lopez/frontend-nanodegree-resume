@@ -63,6 +63,8 @@ if(bio.skills.length > 0){
 
 }
 
+for(index in work.jobs){ console.log(work.jobs[index].employer); }
+
 /*$("#header").prepend(HTMLskills.replace("%data%", bio.skills));
 
 $("#header").prepend(HTMLemail.replace("%data%", bio.contact.email));
