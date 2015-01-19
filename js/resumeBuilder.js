@@ -15,7 +15,7 @@ var bio = {
 var education = {
 "schools":[{
 		"name": "Jesus Marcano",
-		"location":"santiago",
+		"location":"Santiago, Dominican Republic",
 		"majors":["engineering"],
 		"degree":"informatic",
 		"dates":[2010, 2011, 2012],
@@ -31,7 +31,7 @@ var education = {
 var work = {"jobs":[{
 				"employer":"chris",
 				"title":"SCRUM TEAM MEMBER",
-				"location":"avenida erick eckman",
+				"location":"Calle Erick Eckman No. 7, Cerros de Gurabo, Santiago, Dominican Republic",
 				"dates":"jan 30, 2014 - Future",
 				"description":"giving quality to softwares",
 				
@@ -56,6 +56,8 @@ function inName(name){
 	
 	$("#name").text(name.join(" "));
 }
+
+$("#mapDiv").append(googleMap);
 
 $("#header").prepend(HTMLheaderName.replace("%data%", bio.name));
 $("#header").prepend(HTMLbioPic.replace("%data%", bio.picture));

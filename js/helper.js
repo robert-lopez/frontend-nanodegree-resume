@@ -234,8 +234,12 @@ Uncomment the code below when you're ready to implement a Google Map!
 */
 
 // Calls the initializeMap() function when the page loads
-//window.addEventListener('load', initializeMap);
+window.addEventListener('load', initializeMap);
 
+var infoWindow = new google.maps.infoWindow({content:name});
+google.maps.event.addListener(marker, "click", function(){
+infowindow.open(map, marker);
+});
 // Vanilla JS way to listen for resizing of the window
 // and adjust map bounds
 //window.addEventListener('resize', function(e) {
